@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="login_page">
+        <div class="form" >
+       
+            <form class="registration_form">
+    <input type="text" id="username" name="ruser" placeholder="username">
+    <p id="username_error">Please enter your name</p>
+    <input type="email" id="Email" name="remail" placeholder="Email Id" >   
+     <p id="remail_error">Please enter your email</p>
+    <input type="password"  name="rpass" id="password" placeholder="password">
+    <p id="rpass_error">Please enter your password</p>
+    <button>Create</button>
+    <p class="message">Already Registered?<a href="">Login</a></p>
+    </form>
+
+
+
+    <form action="home.html" class="login_form" name="form" method="" onclick="return validated()">
+        
+   <input autocomplete="off" type="email" name="email" id="lemail" placeholder="Email Id">
+<p id="email_error">Please enter your valid email</p>
+        <input type="password" name="pass" id="pass" placeholder="password">
+        <p id="pass_error">Please enter your password</p>
+      
+        <button>Login</button>
+        <p class="message">Not Registered? <a href="#">Registered?</a></p>
+    </form>
+</div>
+</div>
+<script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('.message a').click(function(){
+$('form').animate({height: "toggle", opacity:"toggle"},"slow")
+
+    })
+   
+</script>
+<script src="script.js"></script>
+</body>
+</html>
